@@ -7,11 +7,12 @@
 password = input("type your password: ")
 score = 0
 
-#Check the password for specific characters
+#--Check the password for specific characters--
 lowercase = False
 uppercase = False
 number = False
 punctuation = False
+#--check the password for specific charcters--
 for charcter in password: 
     if charcter in 'abcdefghijklmnopqrstuvwxyz':
         lowercase = True 
@@ -21,7 +22,7 @@ for charcter in password:
         number = True 
     else: 
         punctuation = True 
-
+#--if password passes print text--
 if lowercase == True:
     print('Your password contains at least one lowercase character.')
 if uppercase == True: 
@@ -32,7 +33,7 @@ if punctuation == True:
    print(' Your password contains at least one punctuation.')
 
 
-
+#--If password passes add score--
 if lowercase == True and uppercase == True: 
     score = score + 10
 
@@ -48,5 +49,5 @@ if len(password) >= 8:
 
 
 
-
+#--Show score--
 print(f'\nScore: {str(score)}')

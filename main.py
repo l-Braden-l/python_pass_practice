@@ -1,6 +1,6 @@
-#
-#
-#
+#Braden Leach
+#December 13 2024
+#Password Checker Practice
 
 
 #---Password Checker---#
